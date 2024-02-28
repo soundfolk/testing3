@@ -1,0 +1,4 @@
+.nonclick {
+    pointer-events: none;
+    background-color: white;
+}

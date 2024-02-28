@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="nive.html" id="form">
+        Name :
+        <input type="text" id="name">
+        Age :
+        <input type="text" id="age">
+        <input type="submit" name="Submit">
+    </form>
+</body>
+<script>
+    let names = document.getElementById("name")
+    let age = document.getElementById("age")
+    let forms = document.getElementById("form")
+    forms.addEventListener("submit", function () {
+        localStorage.setItem("name", names.value)
+        localStorage.setItem("age", age.value)
+    })
+</script>
+
+</html>
